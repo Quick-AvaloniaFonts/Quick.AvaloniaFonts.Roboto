@@ -1,16 +1,4 @@
-# Quick.AvaloniaFonts.Roboto
-* Roboto fonts for Avalonia
-* Full version： [![NuGet Downloads](https://img.shields.io/nuget/dt/Quick.AvaloniaFonts.Roboto.svg)](https://www.nuget.org/packages/Quick.AvaloniaFonts.Roboto/)
-* Slim version： [![NuGet Downloads](https://img.shields.io/nuget/dt/Quick.AvaloniaFonts.Roboto.Slim.svg)](https://www.nuget.org/packages/Quick.AvaloniaFonts.Roboto.Slim/)
-
-How to use
--------------
-Replace ***.WithInterFont()*** to ***.WithFont_Roboto()*** in Program.cs
-
-Example
--------------
-```
-using Avalonia;
+﻿using Avalonia;
 using System;
 
 namespace TestApp;
@@ -32,4 +20,3 @@ class Program
             .WithFont_Roboto()
             .LogToTrace();
 }
-```

@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0</Version>
+        <Title>SourceHanSansCN fonts for Avalonia</Title>
+        <Description>SourceHanSansCN fonts for Avalonia</Description>
+        <PackageProjectUrl>https://github.com/Quick-AvaloniaFonts/Quick.AvaloniaFonts.SourceHanSansCN</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Quick-AvaloniaFonts/Quick.AvaloniaFonts.SourceHanSansCN</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Alibaba-PuHuiTi-Bold.ttf" />
+      <None Remove="Assets\Alibaba-PuHuiTi-Heavy.ttf" />
+      <None Remove="Assets\Alibaba-PuHuiTi-Light.ttf" />
+      <None Remove="Assets\Alibaba-PuHuiTi-Medium.ttf" />
+      <None Remove="Assets\Alibaba-PuHuiTi-Regular.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AvaloniaResource Include="..\Fonts\Roboto-Black.ttf">
+        <Link>Assets\Fonts\Roboto-Black.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-BlackItalic.ttf">
+        <Link>Assets\Fonts\Roboto-BlackItalic.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-Bold.ttf">
+        <Link>Assets\Fonts\Roboto-Bold.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-BoldItalic.ttf">
+        <Link>Assets\Fonts\Roboto-BoldItalic.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-Italic.ttf">
+        <Link>Assets\Fonts\Roboto-Italic.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-Light.ttf">
+        <Link>Assets\Fonts\Roboto-Light.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-LightItalic.ttf">
+        <Link>Assets\Fonts\Roboto-LightItalic.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-Medium.ttf">
+        <Link>Assets\Fonts\Roboto-Medium.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-MediumItalic.ttf">
+        <Link>Assets\Fonts\Roboto-MediumItalic.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-Regular.ttf">
+        <Link>Assets\Fonts\Roboto-Regular.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-Thin.ttf">
+        <Link>Assets\Fonts\Roboto-Thin.ttf</Link>
+      </AvaloniaResource>
+      <AvaloniaResource Include="..\Fonts\Roboto-ThinItalic.ttf">
+        <Link>Assets\Fonts\Roboto-ThinItalic.ttf</Link>
+      </AvaloniaResource>
+    </ItemGroup>
+
+</Project>
